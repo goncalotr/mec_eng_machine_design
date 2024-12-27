@@ -101,8 +101,7 @@ void loop() {
                         htmlResponse += "<p>Latitude: " + String(latitude, 6) + "</p>";
                         htmlResponse += "<p>Longitude: " + String(longitude, 6) + "</p>";
                         htmlResponse += "<p>Date: " + String(year) + "-" + (month < 10 ? "0" : "") + String(month) + "-" + (day < 10 ? "0" : "") + String(day) + "</p>"; // Correct date format
-                        htmlResponse += "<p>Time: " + (hour < 10 ? "0" : "") + String(hour) + ":" + (minute < 10 ? "0" : "") + String(minute) + ":" + (second < 10 ? "0" : "") + String(second) + "</p>"; // Correct time format
-
+                        htmlResponse += "<p>Time: " + String(hour < 10 ? "0" : "") + String(hour) + ":" + String(minute < 10 ? "0" : "") + String(minute) + ":" + String(second < 10 ? "0" : "") + String(second) + "</p>";
                         // Leaflet Map Setup (Corrected String concatenation):
                         htmlResponse += "<div id='map'></div>";
                         htmlResponse += "<script src='https://unpkg.com/leaflet@1.7.1/dist/leaflet.js'></script>";
