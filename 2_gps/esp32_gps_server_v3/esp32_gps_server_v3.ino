@@ -56,11 +56,11 @@ void loop() {
 
     if (age == TinyGPS::GPS_INVALID_AGE || age > 5000) {
         // Default values if GPS fix is not available or too old
-        latitude = 37.235;
-        longitude = -115.811;
-        year = 2024;
-        month = 11;
-        day = 6;
+        latitude = 41.451030;
+        longitude = -8.294489;
+        year = 2025;
+        month = 1;
+        day = 26;
         hour = 0;
         minute = 0;
         second = 0;
